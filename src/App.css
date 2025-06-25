@@ -16,3 +16,67 @@
     width: 110%;
   }
 }
+
+/* Booking Section */
+.booking-section {
+    background: white;
+}
+
+.calendar-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+    margin: 2rem 0;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.day {
+    padding: 12px;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.day:hover {
+    background-color: #e3f2fd;
+    border-color: #667eea;
+}
+
+.day.selected {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-color: #667eea;
+}
+
+.day.booked {
+    background-color: #ffebee;
+    border-color: #ef5350;
+    color: #c62828;
+    cursor: not-allowed;
+}
+
+.selected-date-display {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #667eea;
+    margin: 1rem 0;
+}
